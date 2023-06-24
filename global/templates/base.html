@@ -22,32 +22,6 @@
     {% block content %}
     <section>¯\_(ツ)_/¯</section>
     {% endblock content %}
-    {% block webring %}
-    <br />
-    <section>
-      <table>
-        <td>
-          {% set image = resize_image(path="images/classe-nBoPjadlesc.png", width=90, height=60, op="scale") %}
-          <a href="https://applianceri.ng/next?host=wasabipesto.com">
-            <img src="{{ image.static_path | replace(from="static", to="") }}" title="Rancilio Classe 9 Espresso Machine, photo by Jordan Whitt" />
-          </a>
-        </td><td>
-          <table class="border">
-            <tr><td colspan="3" class="center">
-              <a href="https://fediring.net/">Fediring</a>
-            </td></tr>
-            <tr><td>
-              <a href="https://fediring.net/previous?host=wasabipesto.com"><</a>
-            </td><td>
-              <a href="https://fediring.net/random">Random</a>
-            </td><td>
-              <a href="https://fediring.net/previous?host=wasabipesto.com">></a>
-            </td></tr>
-          </table>
-        </td>
-      </table>
-    </section>
-    {% endblock webring %}
     {% block footer %}
     <br />
     <section>
