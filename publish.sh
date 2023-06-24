@@ -10,5 +10,5 @@ echo Publishing...
 
 cd /opt/zola/wasabipesto.com
 zola build
-rm -r /opt/nginx/www/wasabipesto.com/*
-mv public/* /opt/nginx/www/wasabipesto.com
+rm -r /opt/nginx/www/wasabipesto.com/* /opt/nginx/www/wasabipesto.com/.??*
+mv public/* public/.??* /opt/nginx/www/wasabipesto.com
