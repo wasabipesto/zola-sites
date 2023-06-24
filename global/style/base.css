@@ -24,10 +24,6 @@ section {
 	background: #181825;
 }
 
-.center {
-	text-align: center;
-}
-
 a:link,
 a:visited {
 	color: #bac2de;
@@ -56,6 +52,10 @@ hr {
 	margin: 1.5em 0;
 }
 
+.center {
+	text-align: center;
+}
+
 .border {
 	border: 1px solid #cdd6f4;
 }
@@ -63,6 +63,24 @@ hr {
 .columns_three {
 	columns: 3 auto;
 }
+
+.nav-arrow {
+	margin: 5px;
+	padding: 0;
+	font-size: 2.5em;
+	text-align: center;
+	text-decoration: none;
+	background-color: #1e1e2e;
+}
+
+.nav-arrow a {
+	text-decoration: none;
+}
+
+.rtl {
+	transform: scaleX(-1);
+}
+
 
 @media (max-width: 500px) {
 	body {
