@@ -22,3 +22,4 @@ render () {
 
 render "wasabipesto.com" "wasabipesto.com"
 render "blorbo.city" "blorbo.city"
+render "eschaton.city" "eschaton.city"

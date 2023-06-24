@@ -1,5 +1,4 @@
-
-{% set image = resize_image(path=file, height=860, op="fit_height") %}
+{% set image = resize_image(path=file, width=1080, height=860, op="fit") %}
 <div class="center">
     <img src="{{ image.static_path | replace(from="static", to="") }}" title="{{title}}" />
 </div>
