@@ -1,7 +1,7 @@
-<div>
+<div class="columns_three center">
   {% for asset in page.assets | sort() | reverse -%}
     {%- if asset is matching("[.](jpg|jpeg|png)$") -%}
-      {% set image = resize_image(path=asset, width=500, op="fit_width") %}
+      {% set image = resize_image(path=asset, width=350, op="fit_width") %}
       <a href="{{ get_url(path=asset) | replace(from="http://127.0.0.1:1111/", to="/") }}" target="_blank">
         <img src="{{ image.static_path | replace(from="static", to="") }}" />
       </a>
