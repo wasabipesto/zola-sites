@@ -1,0 +1,8 @@
+# file types
+*.xml
+*.deb
+*.pdf
+
+# paths
+**/public
+**/processed_images/*

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manifold Stats</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      body {
+        background-color: #0f1729;
+      }
+      .modebar-btn .icon {
+        height: 0.75em;
+        width: 0.75em;
+      }
+    </style>
+  </head>
+  <body class="">
+    <section class="section" id="app">
+      <div class="container">
+        <div class="box content has-text-centered">
+          <p class="title is-2">Manifold Market Stats</p>
+        </div>
+        <div class="box content">
+          <div v-if="isLoading">Loading...</div>
+          <div id="endOfMarketCalibrationPlot"></div>
+        </div>
+        <div class="box content">
+          <div v-if="isLoading">Loading...</div>
+          <div id="probabilityHistogram"></div>
+        </div>
+        <div class="columns is-desktop">
+          <div class="column">
+            <div class="box content">
+              <div v-if="isLoading">Loading...</div>
+              <div id="mechanismPie"></div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box content">
+              <div v-if="isLoading">Loading...</div>
+              <div id="outcomeTypePie"></div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box content">
+              <div v-if="isLoading">Loading...</div>
+              <div id="resolutionPie"></div>
+            </div>
+          </div>
+        </div>
+        <div class="box content">
+          <div v-if="isLoading">Loading...</div>
+          <div id="volumeHistogram"></div>
+        </div>
+        <div class="box content">
+          <div v-if="isLoading">Loading...</div>
+          <div id="totalLiquidityHistogram"></div>
+        </div>
+        <div class="box content">
+          <div v-if="isLoading">Loading...</div>
+          <div id="openTimeHistogram"></div>
+        </div>
+        <div class="box content">
+          <div v-if="isLoading">Loading...</div>
+          <div id="marketsCreatedPerUserHistogram"></div>
+        </div>
+      </div>
+    </section>
+    <script src="/manifold/markets/marketdata.js"></script>
+  </body>
+</html>

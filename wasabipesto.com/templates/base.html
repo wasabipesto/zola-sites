@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="/style/hack-subset.css">
+    <link rel="stylesheet" href="/style/base.css">
+    <title>
+      {% block title %}
+        {% if page.title %}
+          {{ page.title }}
+        {% elif section.title %}
+          {{ section.title }}
+        {% else %}
+          {{ config.title }}
+        {% endif %}
+      {% endblock title %}
+    </title>
+  </head>
+  <body>
+    {% block content %}
+    <section>Empty Page</section>
+    {% endblock content %}
+    {% block webring %}
+    <br />
+    <section>
+      {% set image = resize_image(path="images/classe-nBoPjadlesc.png", width=90, height=60, op="scale") %}
+      <a href="https://applianceri.ng/next?host=wasabipesto.com">
+        <img src="{{ image.static_path | replace(from="static", to="") }}" title="Rancilio Classe 9 Espresso Machine, photo by Jordan Whitt" />
+      </a>
+    </section>
+    {% endblock webring %}
+    {% block footer %}
+    <br />
+    <section>
+      <div>
+        <a href="/">home</a>
+        <a href="/blogroll">blogroll</a>
+        <a href="/now">now</a>
+        <a href="/cats">cats</a>
+        <a href="https://api.github.com/users/wasabipesto/keys">ssh</a>
+        <a href="https://api.github.com/users/wasabipesto/gpg_keys">gpg</a>
+        <a href="https://github.com/wasabipesto">github</a>
+        <a href="https://wasabipesto.tumblr.com">tumblr</a>
+        <a href="mailto://contact@wasabipesto.com">email</a>
+        <a href="https://mastodon.boiler.social/@wasabipesto" rel="me">mastodon</a>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="me">copyright</a>
+      </div>
+    </section>
+    {% endblock footer %}
+  </body>
+</html>

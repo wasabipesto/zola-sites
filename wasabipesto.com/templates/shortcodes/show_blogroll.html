@@ -1,0 +1,2 @@
+{% set table = load_data(path="static/data/blogroll.md") %}
+{{ table | markdown() | safe }}
