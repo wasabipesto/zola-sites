@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section>
+    {% if page.content %}
+      {{ page.content | safe }}
+    {% elif section.content %}
+      {{ section.content | safe }}
+    {% else %}
+      ¯\_(ツ)_/¯
+    {% endif %}
+  </section>
+{% endblock content %}
+
+{% block webring %}
+{% endblock webring %}
+
+{% block footer %}
+  <br />
+  <section class="center">
+      <a href="https://wasabipesto.com">home</a>
+  </section>
+{% endblock footer %}
