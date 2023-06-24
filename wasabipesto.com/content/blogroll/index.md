@@ -6,4 +6,4 @@ title = "blogroll"
 
 These are the blogs I'm currently subscribed to in FreshRSS.
 
-{{ show_blogroll() }}
+{{ include_markdown(file="content/blogroll/table.txt") }}

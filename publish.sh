@@ -4,11 +4,24 @@ echo Preprocessing...
 
 cd /opt/zola/preprocessing/blogroll
 docker exec freshrss ./cli/export-opml-for-user.php --user justin > ./feeds.opml.xml
-python3 opml-parser.py ./feeds.opml.xml /opt/zola/wasabipesto.com/static/data/blogroll.md
+python3 opml-parser.py ./feeds.opml.xml /opt/zola/wasabipesto.com/content/blogroll/table.txt
 
 echo Publishing...
 
-cd /opt/zola/wasabipesto.com
-zola build
-rm -r /opt/nginx/www/wasabipesto.com/* /opt/nginx/www/wasabipesto.com/.??*
-mv public/* public/.??* /opt/nginx/www/wasabipesto.com
+if [ $1 = "prod" ]; then
+
+    cd /opt/zola/wasabipesto.com
+    if ! zola build; then exit; fi
+    rm -r /opt/nginx/www/wasabipesto.com/* /opt/nginx/www/wasabipesto.com/.??*
+    mv public/* public/.??* /opt/nginx/www/wasabipesto.com
+    echo Pushed to wasabipesto.com.
+
+else
+
+    cd /opt/zola/wasabipesto.com
+    if ! zola build; then exit; fi
+    rm -r /opt/nginx/www/beta.wasabipesto.com/* /opt/nginx/www/beta.wasabipesto.com/.??*
+    mv public/* public/.??* /opt/nginx/www/beta.wasabipesto.com
+    echo Pushed to beta.wasabipesto.com.
+
+fi

@@ -1,0 +1,2 @@
+{% set table = load_data(path=file) %}
+{{ table | markdown() | safe }}
