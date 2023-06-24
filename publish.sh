@@ -17,9 +17,11 @@ render () {
     rm -r /opt/nginx/www/$2/.??* &> /dev/null
     mv public/* /opt/nginx/www/$2
     mv public/.??* /opt/nginx/www/$2 &> /dev/null
-    echo Pushed to $2.
+    echo Pushed to https://$2.
 }
 
+render "wasabipesto.com" "beta.wasabipesto.com"
+read -rsp $'Press any key to proceed...\n' -n1 key
 render "wasabipesto.com" "wasabipesto.com"
 render "blorbo.city" "blorbo.city"
 render "eschaton.city" "eschaton.city"
