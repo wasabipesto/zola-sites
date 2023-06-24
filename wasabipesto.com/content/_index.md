@@ -1,5 +1,6 @@
 +++
 title = "wasabipesto dot com"
+template = "page_webring.html"
 +++
 
 {{ resize_image(path="/images/crows.png", width=40, height=40, op="scale") }}
