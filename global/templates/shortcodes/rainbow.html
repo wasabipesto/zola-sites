@@ -1,3 +1,5 @@
-<span class="gaydance">
-    <span style="--n:100ms;">w</span><span style="--n:200ms;">a</span><span style="--n:300ms;">s</span><span style="--n:400ms;">a</span><span style="--n:500ms;">b</span><span style="--n:600ms;">i</span><span style="--n:700ms;">p</span><span style="--n:800ms;">e</span><span style="--n:900ms;">s</span><span style="--n:1100ms;">t</span><span style="--n:1200ms;">o</span>
+<span class="rainbow">
+    {%- for letter in text -%}
+    <span style="--n:{{loop.index}}00ms;">{{letter}}</span>
+    {%- endfor -%}
 </span>
