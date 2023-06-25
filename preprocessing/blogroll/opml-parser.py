@@ -34,3 +34,4 @@ for category in categories:
 
 with open(sys.argv[2], "w") as output:
     [output.write(str(line)+'\n') for line in lines]
+print("Successfully written to "+sys.argv[2])

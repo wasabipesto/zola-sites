@@ -3,19 +3,10 @@
 source /opt/zola/.env
 
 echo Preprocessing...
-
-output_path="/opt/zola/wasabipesto.com/content/blogroll/data.txt"
 docker exec freshrss ./cli/export-opml-for-user.php --user justin > /opt/zola/preprocessing/blogroll/feeds.opml.xml
-python3 /opt/zola/preprocessing/blogroll/opml-parser.py /opt/zola/preprocessing/blogroll/feeds.opml.xml ${output_path}
-echo Pushed blogroll data to ${output_path}.
-
-output_path="/opt/zola/wasabipesto.com/content/machines/data.txt"
-python3 /opt/zola/preprocessing/notion/notion-machines.py $NOTION_API_KEY ${output_path}
-echo Pushed machine data to ${output_path}.
-
-output_path="/opt/zola/wasabipesto.com/content/media/data.txt"
-python3 /opt/zola/preprocessing/notion/notion-media.py $NOTION_API_KEY ${output_path}
-echo Pushed media data to ${output_path}.
+python3 /opt/zola/preprocessing/blogroll/opml-parser.py /opt/zola/preprocessing/blogroll/feeds.opml.xml /opt/zola/wasabipesto.com/content/blogroll/data.txt
+python3 /opt/zola/preprocessing/notion/notion-machines.py $NOTION_API_KEY /opt/zola/wasabipesto.com/content/machines/data.txt
+python3 /opt/zola/preprocessing/notion/notion-media.py $NOTION_API_KEY /opt/zola/wasabipesto.com/content/media/data.txt
 
 render () {
     echo
