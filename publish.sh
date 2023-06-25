@@ -10,8 +10,12 @@ python3 /opt/zola/preprocessing/blogroll/opml-parser.py /opt/zola/preprocessing/
 echo Pushed blogroll data to ${output_path}.
 
 output_path="/opt/zola/wasabipesto.com/content/machines/data.txt"
-python3 /opt/zola/preprocessing/notion/notion-gardner.py $NOTION_API_KEY ${output_path}
+python3 /opt/zola/preprocessing/notion/notion-machines.py $NOTION_API_KEY ${output_path}
 echo Pushed machine data to ${output_path}.
+
+output_path="/opt/zola/wasabipesto.com/content/media/data.txt"
+python3 /opt/zola/preprocessing/notion/notion-media.py $NOTION_API_KEY ${output_path}
+echo Pushed media data to ${output_path}.
 
 render () {
     echo
