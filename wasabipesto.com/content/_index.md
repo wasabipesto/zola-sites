@@ -5,7 +5,7 @@ template = "page_webring.html"
 
 {{ resize_image(path="/images/crows.png", width=40, height=40, op="scale") }}
 
-### wasabipesto (he/him)
+### {{ rainbow() }} (he/him)
 
 I'm wasabipesto and also an engineer and also a human person.
 
