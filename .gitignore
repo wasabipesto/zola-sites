@@ -1,9 +1,13 @@
+# secrets
+.env
+.gitsecret/keys/random_seed
+
 # file types
 *.xml
 *.deb
 *.pdf
+data.txt
 
 # paths
 **/public
 **/processed_images/*
-wasabipesto.com/content/blogroll/table.txt

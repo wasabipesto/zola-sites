@@ -1,18 +1,23 @@
 #!/bin/bash
 
+source /opt/zola/.env
+
 echo Preprocessing...
 
-cd /opt/zola/preprocessing/blogroll
-output_path="/opt/zola/wasabipesto.com/content/blogroll/table.txt"
-docker exec freshrss ./cli/export-opml-for-user.php --user justin > ./feeds.opml.xml
-python3 opml-parser.py ./feeds.opml.xml ${output_path}
-echo Pushed blogroll to ${output_path}.
+output_path="/opt/zola/wasabipesto.com/content/blogroll/data.txt"
+docker exec freshrss ./cli/export-opml-for-user.php --user justin > /opt/zola/preprocessing/blogroll/feeds.opml.xml
+python3 /opt/zola/preprocessing/blogroll/opml-parser.py /opt/zola/preprocessing/blogroll/feeds.opml.xml ${output_path}
+echo Pushed blogroll data to ${output_path}.
+
+output_path="/opt/zola/wasabipesto.com/content/machines/data.txt"
+python3 /opt/zola/preprocessing/notion/notion-gardner.py $NOTION_API_KEY ${output_path}
+echo Pushed machine data to ${output_path}.
 
 render () {
     echo
     echo Building $1...
     cd /opt/zola/$1
-    if ! zola build; then exit; fi
+    if ! zola build; then exit 1; fi
     rm -r /opt/nginx/www/$2/*
     rm -r /opt/nginx/www/$2/.??* &> /dev/null
     mv public/* /opt/nginx/www/$2
