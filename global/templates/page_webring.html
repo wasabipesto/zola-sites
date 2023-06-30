@@ -12,54 +12,29 @@
   </section>
   <br />
   <section>
-    <table>
-      <td>
-        <table class="border" width="140px">
-          <tr><td colspan="3" class="center">
-            <a href="https://fediring.net/">fediring</a>
-          </td></tr>
-          <tr><td class="nav-arrow rtl">
-            <a href="https://fediring.net/previous?host=wasabipesto.com">➤</a>
-          </td><td class="nav-arrow">
-            <a href="https://fediring.net/next?host=wasabipesto.com">➤</a>
-          </td></tr>
-        </table>
-      </td><td>
-        <table class="border" width="140px"><td class="center">
-          {% set image = resize_image(path="images/classe-nBoPjadlesc.png", width=120, height=52, op="fit") %}
-          <a href="https://applianceri.ng/next?host=wasabipesto.com">
-            <img src="{{ image.static_path | replace(from="static", to="") }}" title="Rancilio Classe 9 Espresso Machine, photo by Jordan Whitt" />
-          </a>
-        </td></table>
-      </td><td>
-        <table class="border" width="140px">
-          <tr><td colspan="3" class="center">
-            <a href="https://fediring.net/">hotline webring</a>
-          </td></tr>
-          <tr><td class="nav-arrow rtl">
-            <a href="https://hotlinewebring.club/wasabipesto/previous">➤</a>
-          </td><td class="nav-arrow">
-            <a href="https://hotlinewebring.club/wasabipesto/next">➤</a>
-          </td></tr>
-        </table>
-      </td><td>
-        <table class="border" width="140px">
-          <tr><td colspan="3" class="center">
-            <a href="https://webring.bucketfish.me">bucket webring</a>
-          </td></tr>
-          <tr><td class="nav-arrow rtl">
-            <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=wasabipesto">➤</a>
-          </td><td class="nav-arrow">
-            <a href="https://webring.bucketfish.me/redirect.html?to=next&name=wasabipesto">➤</a>
-          </td></tr>
-        </table>
-      </td><td>
-        <table class="border" width="140px">
-          <tr><td class="center">
-            <a href="https://hyperlink.cafe/">hyperlink café</a>
-          </td></tr>
-        </table>
-      </td>
-    </table>
+    <div style="columns: 180px">
+      {% set image = resize_image(path="images/classe-nBoPjadlesc.png", width=160, op="fit_width") %}
+      <a href="https://applianceri.ng/next?host=wasabipesto.com">
+        <img src="{{ image.static_path | replace(from="static", to="") }}" title="Rancilio Classe 9 Espresso Machine, photo by Jordan Whitt" />
+      </a>
+      <p>
+        <a href="https://fediring.net/previous?host=wasabipesto.com">[[</a>
+        <a href="https://fediring.net/">fediring</a>
+        <a href="https://fediring.net/next?host=wasabipesto.com">]]</a>
+      </p>
+      <p>
+        <a href="https://hotlinewebring.club/wasabipesto/previous">[[</a>
+        <a href="https://fediring.net/">hotline webring</a>
+        <a href="https://hotlinewebring.club/wasabipesto/next">]]</a>
+      </p>
+      <p>
+        <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=wasabipesto">[[</a>
+        <a href="https://webring.bucketfish.me">bucket webring</a>
+        <a href="https://webring.bucketfish.me/redirect.html?to=next&name=wasabipesto">]]</a>
+      </p>
+      <p>
+        <a href="https://hyperlink.cafe/">hyperlink café</a>
+      </p>
+    </div>
   </section>
 {% endblock content %}

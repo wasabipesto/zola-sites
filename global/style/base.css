@@ -56,30 +56,6 @@ hr {
 	text-align: center;
 }
 
-.border {
-	border: 1px solid #cdd6f4;
-}
-
-.columns_three {
-	columns: 3 auto;
-}
-
-.nav-arrow {
-	padding: 0;
-	font-size: 2.5em;
-	text-align: center;
-	text-decoration: none;
-	background-color: #1e1e2e;
-}
-
-.nav-arrow a {
-	text-decoration: none;
-}
-
-.rtl {
-	transform: scaleX(-1);
-}
-
 
 @media (max-width: 500px) {
 	body {
