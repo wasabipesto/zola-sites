@@ -21,9 +21,11 @@ Documenting Every Day: [wasabipesto.com/notion](https://wasabipesto.com/notion)
 
 Calculating Square-Cube Pandigitals: [nicenumbers.net](https://nicenumbers.net)
 
+Scoring Prediction Markets: [calibration.city](https://calibration.city)
+
 Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/wasabipesto) (hiatus)
 
-Real-Time Manifold Statistics: [wasabipesto.com/manifold](https://wasabipesto.com/manifold/markets/) and [manifold.markets/calibration](https://manifold.markets/calibration)
+Real-Time Manifold Statistics: [wasabipesto.com/manifold](https://wasabipesto.com/manifold/markets/)
 
 An alternate read-only Manifold frontend: [github/maxifold](https://github.com/wasabipesto/maxifold) (unfinished)
 
