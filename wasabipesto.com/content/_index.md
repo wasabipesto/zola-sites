@@ -17,15 +17,17 @@ I also fiddle with computers and run a few tabletop games for my friends.
 
 **Projects**
 
-Documenting Every Day: [wasabipesto.com/notion](https://wasabipesto.com/notion)
+Offloading my brain into notion: [wasabipesto.com/notion](https://wasabipesto.com/notion)
 
-Calculating Square-Cube Pandigitals: [nicenumbers.net](https://nicenumbers.net)
+Calculating square-cube pandigitals: [nicenumbers.net](https://nicenumbers.net)
 
-Scoring Prediction Markets: [calibration.city](https://calibration.city)
+Scoring prediction markets: [calibration.city](https://calibration.city)
+
+Reclaiming my personal data: [github/santiago](https://github.com/wasabipesto/santiago)
 
 Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/wasabipesto) (hiatus)
 
-Real-Time Manifold Statistics: [wasabipesto.com/manifold](https://wasabipesto.com/manifold/markets/)
+Real-time Manifold statistics: [wasabipesto.com/manifold](https://wasabipesto.com/manifold/markets/)
 
 An alternate read-only Manifold frontend: [github/maxifold](https://github.com/wasabipesto/maxifold) (unfinished)
 
