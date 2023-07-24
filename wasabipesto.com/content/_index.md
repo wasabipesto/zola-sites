@@ -23,7 +23,7 @@ Calculating square-cube pandigitals: [nicenumbers.net](https://nicenumbers.net)
 
 Scoring prediction markets: [calibration.city](https://calibration.city)
 
-Reclaiming my personal data: [github/santiago](https://github.com/wasabipesto/santiago)
+Reclaiming my personal data: [github/sandiego](https://github.com/wasabipesto/sandiego)
 
 Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/wasabipesto) (hiatus)
 
