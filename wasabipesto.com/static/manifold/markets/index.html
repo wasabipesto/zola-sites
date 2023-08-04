@@ -25,10 +25,17 @@
       <div class="container">
         <div class="box content has-text-centered">
           <p class="title is-2">Manifold Market Stats</p>
+          <p>This page may take up to 30 seconds to load. Please be patient.</p>
         </div>
         <div class="box content">
           <div v-if="isLoading">Loading...</div>
           <div id="endOfMarketCalibrationPlot"></div>
+        </div>
+        <div class="box content">
+          <p>
+            Find more calibration statistics at
+            <a href="https://calibration.city/manifold">calibration.city</a>.
+          </p>
         </div>
         <div class="box content">
           <div v-if="isLoading">Loading...</div>
@@ -69,6 +76,12 @@
         <div class="box content">
           <div v-if="isLoading">Loading...</div>
           <div id="marketsCreatedPerUserHistogram"></div>
+        </div>
+        <div class="box content has-text-centered">
+          <p>
+            Made with ♡ by
+            <a href="https://wasabipesto.com">wasabipesto</a>.
+          </p>
         </div>
       </div>
     </section>
