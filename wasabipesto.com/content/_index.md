@@ -23,13 +23,15 @@ Calculating square-cube pandigitals: [nicenumbers.net](https://nicenumbers.net)
 
 Scoring prediction markets: [calibration.city](https://calibration.city)
 
+Declaratively running services in docker: [github/valinor](https://github.com/wasabipesto/valinor)
+
 Reclaiming my personal data: [github/sandiego](https://github.com/wasabipesto/sandiego)
 
 Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/wasabipesto) (hiatus)
 
-Real-time Manifold statistics: [wasabipesto.com/manifold](https://wasabipesto.com/manifold/markets/)
-
 An alternate read-only Manifold frontend: [github/maxifold](https://github.com/wasabipesto/maxifold) (unfinished)
+
+Real-time Manifold statistics: [wasabipesto.com/manifold](https://wasabipesto.com/manifold/markets/)
 
 Script to manage Restic backups: [github/restic-scripts](https://github.com/wasabipesto/restic-scripts)
 
