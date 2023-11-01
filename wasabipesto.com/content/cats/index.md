@@ -6,7 +6,7 @@ title="cats"
 
 We have two cats:
 
-- Toast, short for Toasted Marshmallow
-- Ginger, short for Destroyer of Worlds
+- Toast, short for Toasted Marshmallow (Bastard at Paw)
+- Ginger, short for Ginger
 
 {{ image_gallery() }}
