@@ -59,7 +59,7 @@ const app = Vue.createApp({
     limit = 1000
 
     const getMarkets = async (before = '') => {
-      const url = `https://manifold.markets/api/v0/markets?limit=${limit}&before=${before}`
+      const url = `https://api.manifold.markets/v0/markets?limit=${limit}&before=${before}`
       const response = await fetch(url)
       const data = await response.json()
       return data
