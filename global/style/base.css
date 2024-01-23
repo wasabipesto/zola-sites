@@ -37,6 +37,11 @@ ul, ol {
 	margin-top: -10px;
 }
 
+ul ul {
+	/* sub-lists maintain spacing */
+	margin-top: 0;
+}
+
 li {
 	line-height: 150%;
 }
