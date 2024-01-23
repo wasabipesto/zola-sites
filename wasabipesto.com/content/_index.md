@@ -1,6 +1,5 @@
 +++
 title = "wasabipesto dot com"
-template = "page_webring.html"
 +++
 
 {{ resize_image(path="/images/crows.png", width=40, height=40, op="scale") }}
@@ -17,7 +16,7 @@ I run a few tabletop games for my friends and family. I enjoy systems focusing o
 
 I believe in quantifying things when it's possible and helpful. I believe in trying and failing and learning.
 
-***
+{{ new_section() }}
 
 ### Projects
 
@@ -38,3 +37,25 @@ Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/
 Script to monitor filesystem changes: [github/overwatch](https://github.com/wasabipesto/overwatch)
 
 Generating this site: [github/zola-sites](https://github.com/wasabipesto/zola-sites)
+
+{{ new_section() }}
+
+### Webrings
+
+{{ columns_start(width=200) }}
+
+{{ appliancering(width=200) }}
+
+#### [fediring](https://fediring.net/)
+
+[previous](https://fediring.net/previous?host=wasabipesto.com) | [next](https://fediring.net/next?host=wasabipesto.com)
+
+#### [hotline webring](https://hotlinewebring.club/)
+
+[previous](https://hotlinewebring.club/wasabipesto/previous) | [next](https://hotlinewebring.club/wasabipesto/next)
+
+#### [bucket webring](https://webring.bucketfish.me/)
+
+[previous](https://webring.bucketfish.me/redirect.html?to=prev&name=wasabipesto) | [next](https://webring.bucketfish.me/redirect.html?to=next&name=wasabipesto)
+
+{{ columns_end() }}

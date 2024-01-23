@@ -2,6 +2,6 @@
 title = "software"
 +++
 
-# hardware
+# software
 
 {{ include_markdown(file="content/software/data.txt") }}
