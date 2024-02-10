@@ -20,23 +20,21 @@ I believe in quantifying things when it's possible and helpful. I believe in try
 
 ### Projects
 
-Offloading my brain into notion: [wasabipesto.com/notion](https://wasabipesto.com/notion)
+Scoring prediction markets: [calibration.city](https://calibration.city)
 
 Calculating square-cube pandigitals: [nicenumbers.net](https://nicenumbers.net)
 
-Scoring prediction markets: [calibration.city](https://calibration.city)
-
 A reasonably-fast, reasonably-simple meme generation tool: [meme.limo](https://meme.limo)
-
-Declaratively running services in docker: [github/valinor](https://github.com/wasabipesto/valinor)
 
 Reclaiming my personal data: [github/sandiego](https://github.com/wasabipesto/sandiego)
 
-Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/wasabipesto)
-
-Script to monitor filesystem changes: [github/overwatch](https://github.com/wasabipesto/overwatch)
+Declaratively running services in docker: [github/valinor](https://github.com/wasabipesto/valinor)
 
 Generating this site: [github/zola-sites](https://github.com/wasabipesto/zola-sites)
+
+Offloading my brain into notion: [wasabipesto.com/notion](https://wasabipesto.com/notion)
+
+Predicting on Manifold: [manifold.markets/wasabipesto](https://manifold.markets/wasabipesto)
 
 {{ new_section() }}
 
